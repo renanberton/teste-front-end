@@ -13,7 +13,7 @@
 }
 
 .container-post {
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,12 +22,13 @@
 }
 
 .post {
-    width: 250px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .post p {
@@ -36,7 +37,7 @@
     width: 100%;
 }
 
-h3 {
+.post h3 {
     width: 100%;
     font-size: 22px;
     text-align: center;
@@ -44,4 +45,10 @@ h3 {
     min-height: 100px;
     font-family: "Francois One";
     color: #00235B;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50px;
+    right:50px;
 }

@@ -1,4 +1,4 @@
-import { User } from '../components/user/index';
+import { User } from '../components/Blog/index';
 import '../styles/home.css';
 
 export function Home() {
