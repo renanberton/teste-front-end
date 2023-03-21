@@ -5,14 +5,14 @@ import './style.css';
 type userType = {
   body: string;
   title: string;
-  id: string;
+  id: number;
 };
 
 export function User() {
   const [blogs, setblogs] = useState<userType[]>([]);
   const [dataLoaded, setDataLoaded] = useState<boolean>(false);
   const [openModal, setOpenModal] = useState<boolean>(false);
-
+  const [idPost, setIdPost] = useState<number>(1);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -26,14 +26,14 @@ export function User() {
   return (
     <>
       {openModal && <img className='close-icon' src="/imgs/close-icon.png" width={"50px"} onClick={() => setOpenModal(false)} />}
-      {dataLoaded && openModal && <ModalBlog/>}
+      {dataLoaded && openModal && idPost && <ModalBlog id={idPost} />}
       <div className='container'>
         <ul className='container-post'>
-          {blogs.map((repo) => {
+          {blogs.map((blog) => {
             return (
-              <li className='post' onClick={() => setOpenModal(true)}>
-                <h3>{repo.title}</h3>
-                <p>{repo.body}</p>
+              <li className='post' onClick={() => {setIdPost(blog.id); setOpenModal(true)}}>
+                <h3>{blog.title}</h3>
+                <p>{blog.body}</p>
               </li>
             );
           })}

@@ -7,10 +7,16 @@ type userType = {
     id: string,
 }
 
-export function ModalBlog() {
+type idType = {
+    id: number
+}
+
+
+export function ModalBlog({ id }: idType) {
     const [blogs, setblogs] = useState<userType[]>([]);
+    
         useEffect(() => {
-            fetch("https://jsonplaceholder.typicode.com/posts/1/comments")
+            fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments")
                 .then(response => response.json())
                 .then(data => setblogs(data))
         }, [])
