@@ -13,7 +13,7 @@
 }
 
 .container-post {
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,12 +22,13 @@
 }
 
 .post {
-    width: 250px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .post p {
