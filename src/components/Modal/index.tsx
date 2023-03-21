@@ -16,11 +16,13 @@ export function ModalBlog() {
         }, [])
 
         return (
-            <div>
-                {blogs.map(blog => {
+            <div className='container-coment'>
+                {blogs.map((blog, key) => {
+                    key += 1;
                     return (
-                        <div className='post'>
-                            <h3>{blog.title}</h3>
+                        <div className='coment'  key={key}>
+                            <h1>Comentário {key}</h1>
+                            <p>{blog.title}</p>
                             <p>{blog.body}</p>
                         </div>
                     )

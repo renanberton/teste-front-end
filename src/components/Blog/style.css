@@ -37,7 +37,7 @@
     width: 100%;
 }
 
-h3 {
+.post h3 {
     width: 100%;
     font-size: 22px;
     text-align: center;
@@ -45,4 +45,10 @@ h3 {
     min-height: 100px;
     font-family: "Francois One";
     color: #00235B;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50px;
+    right:50px;
 }
