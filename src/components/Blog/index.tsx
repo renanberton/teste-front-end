@@ -8,10 +8,11 @@ type userType = {
   id: number;
 };
 
-export function User() {
+export function Blog() {
   const [blogs, setblogs] = useState<userType[]>([]);
   const [dataLoaded, setDataLoaded] = useState<boolean>(false);
   const [openModal, setOpenModal] = useState<boolean>(false);
+  const [openBlog, setopenBlog] = useState<boolean>(true);
   const [idPost, setIdPost] = useState<number>(1);
 
   useEffect(() => {
@@ -25,13 +26,14 @@ export function User() {
 
   return (
     <>
-      {openModal && <img className='close-icon' src="/imgs/close-icon.png" width={"50px"} onClick={() => setOpenModal(false)} />}
+      {openModal && <img className='close-icon' src="/imgs/close-icon.png" alt='Imagem para fechar os comentários' width={"50px"} onClick={() => {setOpenModal(false); setopenBlog(true)}} />}
       {dataLoaded && openModal && idPost && <ModalBlog id={idPost} />}
+      {openBlog && 
       <div className='container'>
         <ul className='container-post'>
           {blogs.map((blog) => {
             return (
-              <li className='post' onClick={() => {setIdPost(blog.id); setOpenModal(true)}}>
+              <li className='post' onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
                 <h3>{blog.title}</h3>
                 <p>{blog.body}</p>
               </li>
@@ -39,6 +41,7 @@ export function User() {
           })}
         </ul>
       </div>
+      }
     </>
   );
 }
