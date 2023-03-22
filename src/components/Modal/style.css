@@ -17,9 +17,12 @@
     align-items: center;
 }
 
-
 .coment p {
     text-align: center;
     max-width: 400px;
     width: 90%;
+}
+
+.coment h1 {
+    font-size: 20px;
 }

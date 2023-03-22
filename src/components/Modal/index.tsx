@@ -35,7 +35,7 @@ export function ModalBlog({ id }: idType) {
             {dataLoaded &&
             
             <div className='container-coment'>
-                <h1> {coments?.title.toLocaleUpperCase()}</h1>
+                <h1>Post <br/> {coments?.title.toLocaleUpperCase()}</h1>
                 {blogs.map((blog, key) => {
                     key += 1;
                     return (
