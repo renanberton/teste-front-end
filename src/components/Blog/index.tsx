@@ -30,11 +30,12 @@ export function Blog() {
       {dataLoaded && openModal && idPost && <ModalBlog id={idPost} />}
       {openBlog && 
       <div className='container'>
+        <h1>Blog - API</h1>
         <ul className='container-post'>
           {blogs.map((blog) => {
             return (
               <li className='post' onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
-                <h3>{blog.title}</h3>
+                <h2>{blog.title}</h2>
                 <p>{blog.body}</p>
               </li>
             );
