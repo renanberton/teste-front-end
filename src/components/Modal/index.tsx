@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 type userType = {
     body: string,
     title: string,
-    id: string,
+    id: number,
 }
 
 type idType = {
@@ -14,15 +14,28 @@ type idType = {
 
 export function ModalBlog({ id }: idType) {
     const [blogs, setblogs] = useState<userType[]>([]);
+    const [coments, setComents] = useState<userType>();
+    const [dataLoaded, setDataLoaded] = useState<boolean>(false);
     
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/posts/' + id)
+          .then((response) => response.json())
+          .then((data) => {setComents(data); setDataLoaded(true)})
+      }, []);
+
         useEffect(() => {
             fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments")
                 .then(response => response.json())
                 .then(data => setblogs(data))
         }, [])
 
+
         return (
+            <>
+            {dataLoaded &&
+            
             <div className='container-coment'>
+                <h1> {coments?.title.toLocaleUpperCase()}</h1>
                 {blogs.map((blog, key) => {
                     key += 1;
                     return (
@@ -34,5 +47,7 @@ export function ModalBlog({ id }: idType) {
                     )
                 })}
             </div>
+            }
+            </>
         )
 }
