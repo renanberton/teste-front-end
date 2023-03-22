@@ -25,7 +25,7 @@ export function User() {
 
   return (
     <>
-      {openModal && <img className='close-icon' src="/imgs/close-icon.png" width={"50px"} onClick={() => setOpenModal(false)} />}
+      {openModal && <img className='close-icon' src="/imgs/close-icon.png" alt='Imagem para fechar os comentários' width={"50px"} onClick={() => setOpenModal(false)} />}
       {dataLoaded && openModal && idPost && <ModalBlog id={idPost} />}
       <div className='container'>
         <ul className='container-post'>
