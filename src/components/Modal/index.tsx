@@ -5,6 +5,8 @@ type userType = {
     body: string,
     title: string,
     id: number,
+    email: string,
+    name: string,
 }
 
 type idType = {
@@ -41,6 +43,8 @@ export function ModalBlog({ id }: idType) {
                     return (
                         <div className='coment'  key={key}>
                             <h1>Comentário {key}</h1>
+                            <p>Name: {blog.name}</p>
+                            <p>Email: {blog.email}</p>
                             <p>{blog.title}</p>
                             <p>{blog.body}</p>
                         </div>
