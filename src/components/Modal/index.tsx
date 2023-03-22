@@ -15,20 +15,20 @@ type idType = {
 
 
 export function ModalBlog({ id }: idType) {
-    const [blogs, setblogs] = useState<userType[]>([]);
-    const [coments, setComents] = useState<userType>();
+    const [coments, setComents] = useState<userType[]>([]);
+    const [post, setPost] = useState<userType>();
     const [dataLoaded, setDataLoaded] = useState<boolean>(false);
     
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts/' + id)
           .then((response) => response.json())
-          .then((data) => {setComents(data); setDataLoaded(true)})
+          .then((data) => {setPost(data); setDataLoaded(true)})
       }, []);
 
         useEffect(() => {
             fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments")
                 .then(response => response.json())
-                .then(data => setblogs(data))
+                .then(data => setComents(data))
         }, [])
 
 
@@ -37,16 +37,15 @@ export function ModalBlog({ id }: idType) {
             {dataLoaded &&
             
             <div className='container-coment'>
-                <h1>Post <br/> {coments?.title.toLocaleUpperCase()}</h1>
-                {blogs.map((blog, key) => {
+                <h1>Post <br/> {post?.title.toLocaleUpperCase()}</h1>
+                {coments.map((coment, key) => {
                     key += 1;
                     return (
                         <div className='coment'  key={key}>
                             <h1>Comentário {key}</h1>
-                            <p>Name: {blog.name}</p>
-                            <p>Email: {blog.email}</p>
-                            <p>{blog.title}</p>
-                            <p>{blog.body}</p>
+                            <p>{coment.body}</p>
+                            <p><strong>Name: </strong>{coment.name}</p>
+                            <p><strong>Email: </strong>{coment.email}</p>
                         </div>
                     )
                 })}

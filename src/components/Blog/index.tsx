@@ -8,7 +8,7 @@ type userType = {
   id: number;
 };
 
-export function User() {
+export function Blog() {
   const [blogs, setblogs] = useState<userType[]>([]);
   const [dataLoaded, setDataLoaded] = useState<boolean>(false);
   const [openModal, setOpenModal] = useState<boolean>(false);
