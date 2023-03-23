@@ -25,6 +25,7 @@
 .post {
     max-width: 400px;
     width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +43,7 @@
     background-color: #00235B;
     color: #fff;
     transition: 0.5s;
+    max-width: 450px;
 }
 
 .post:hover h2 {
