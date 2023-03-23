@@ -35,20 +35,21 @@ export function ModalBlog({ id }: idType) {
         return (
             <>
             {dataLoaded &&
-            
-            <div className='container-coment'>
+            <div>
                 <h1>Post <br/> {post?.title.toLocaleUpperCase()}</h1>
-                {coments.map((coment, key) => {
-                    key += 1;
-                    return (
-                        <div className='coment'  key={key}>
-                            <h1>Comentário {key}</h1>
-                            <p>{coment.body}</p>
-                            <p><strong>Name: </strong>{coment.name}</p>
-                            <p><strong>Email: </strong>{coment.email}</p>
-                        </div>
-                    )
-                })}
+                <div className='container-coment'>
+                    {coments.map((coment, key) => {
+                        key += 1;
+                        return (
+                            <div className='coment'  key={key}>
+                                <h1>Comment {key}</h1>
+                                <p>{coment.body}</p>
+                                <p><strong>Name: </strong>{coment.name}</p>
+                                <p><strong>Email: </strong>{coment.email}</p>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
             }
             </>
