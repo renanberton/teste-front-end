@@ -100,3 +100,24 @@
     border: 1px solid #00235B;
     transition: 0.5s;
 }
+
+.to-top-button {
+    max-width: 250px;
+    width: 70%;
+    height: 50px;
+    background-color: #FFDD83;
+    color: #3c3c3c;
+    font-family: 'Francois One';
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.to-top-button:hover {
+    background-color: #F6F1F1;
+    color: #00235B;
+    border: 1px solid #00235B;
+    transition: 0.5s;
+}
