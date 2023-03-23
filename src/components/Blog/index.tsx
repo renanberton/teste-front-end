@@ -14,6 +14,7 @@ export function Blog() {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [openBlog, setopenBlog] = useState<boolean>(true);
   const [idPost, setIdPost] = useState<number>(1);
+  const [itemsToShow, setItemsToShow] = useState<number>(25);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -32,7 +33,7 @@ export function Blog() {
       <div className='container'>
         <h1>Blog - API</h1>
         <ul className='container-post'>
-          {blogs.map((blog) => {
+          {blogs.slice(0, itemsToShow).map((blog) => {
             return (
               <li className='post' onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
                 <h2>{blog.title}</h2>
@@ -41,11 +42,11 @@ export function Blog() {
             );
           })}
         </ul>
+        {itemsToShow < blogs.length && (
+          <button className='load-more' onClick={() => setItemsToShow(itemsToShow + 25)}>Ver Mais</button>
+        )}
       </div>
       }
     </>
   );
 }
-
-
-
