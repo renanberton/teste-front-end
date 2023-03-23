@@ -22,14 +22,10 @@
     margin-top: 100px;
 }
 
-.container-post a {
-    text-decoration: none;
-    color: #3c3c3c;
-}
-
 .post {
     max-width: 400px;
     width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +37,17 @@
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+}
+
+.post:hover {
+    background-color: #00235B;
+    color: #fff;
+    transition: 0.5s;
+    max-width: 450px;
+}
+
+.post:hover h2 {
+    color: #fff;
 }
 
 .post p {
@@ -63,6 +70,7 @@
     font-family: "Francois One";
     color: #00235B;
     margin-top: 25px;
+    transition: 0.5s;
 }
 
 .close-icon {
