@@ -79,3 +79,24 @@
     right:50px;
     cursor: pointer;
 }
+
+.load-more {
+    max-width: 250px;
+    width: 70%;
+    height: 50px;
+    background-color: #EA5455;
+    color: #fff;
+    font-family: 'Francois One';
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.load-more:hover {
+    background-color: #F6F1F1;
+    color: #00235B;
+    border: 1px solid #00235B;
+    transition: 0.5s;
+}
