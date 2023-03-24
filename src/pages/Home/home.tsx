@@ -1,6 +1,5 @@
 import { Header } from '../../components/Header';
 import '../../styles/home.css';
-import { Link } from 'react-router-dom';
 
 export function Home() {
     return (
@@ -9,6 +8,7 @@ export function Home() {
             <div className="content">
                 <h2>Welcome to API blog</h2>
                 <p>Use the menu to navigate the site and enjoy all its features.</p>
+                <img className='blog-image' src="/imgs/blog-image.jpg" alt='Imagem para fechar os comentários' width={"400px"}  />
             </div>
         </div>
 
