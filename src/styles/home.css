@@ -29,4 +29,7 @@ h1 {
     text-align: center;
     font-family: 'Roboto';
     color: #6c6c6c;
+    width: 90%;
+    max-width: 300px;
+    margin: 50px auto;
 }
