@@ -12,6 +12,10 @@
     background-color: #F6F1F1;
 }
 
+.container h1 {
+    color: #00235B;
+}
+
 .container-post {
     width: 100%;
     display: flex;
@@ -120,4 +124,14 @@
     color: #00235B;
     border: 1px solid #00235B;
     transition: 0.5s;
+}
+
+@media (max-width: 420px) {
+.post h2 {
+    font-size: 18px;
+}
+
+.post p {
+    font-size: 14px;
+}
 }
