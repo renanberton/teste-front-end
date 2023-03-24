@@ -16,6 +16,14 @@ export function Blog() {
   const [idPost, setIdPost] = useState<number>(1);
   const [itemsToShow, setItemsToShow] = useState<number>(25);
 
+  function ScrollToTopButton(){
+    return (
+      <button className='to-top-button' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        Topo
+      </button>
+    );
+  };
+
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then((response) => response.json())
@@ -42,6 +50,7 @@ export function Blog() {
             );
           })}
         </ul>
+        {itemsToShow == blogs.length && <ScrollToTopButton />}
         {itemsToShow < blogs.length && (
           <button className='load-more' onClick={() => setItemsToShow(itemsToShow + 25)}>Ver Mais</button>
         )}
