@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: #F6F1F1;
+}
+
+.container-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.post-users {
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 2px solid #3c3c3c;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.post-users:hover {
+    background-color: #00235B;
+    color: #fff;
+    transition: 0.5s;
+    max-width: 320px;
+}
+
+.post-users:hover h2 {
+    color: #fff;
+}
+
+.post-users p {
+    min-height: 110px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.post-users h2 {
+    width: 90%;
+    max-width: 400px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    min-height: 70px;
+    font-family: "Francois One";
+    color: #00235B;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50px;
+    right:50px;
+    cursor: pointer;
+}
+
+.load-more {
+    max-width: 250px;
+    width: 70%;
+    height: 50px;
+    background-color: #EA5455;
+    color: #fff;
+    font-family: 'Francois One';
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.load-more:hover {
+    background-color: #F6F1F1;
+    color: #00235B;
+    border: 1px solid #00235B;
+    transition: 0.5s;
+}
+
+.to-top-button {
+    max-width: 250px;
+    width: 70%;
+    height: 50px;
+    background-color: #FFDD83;
+    color: #3c3c3c;
+    font-family: 'Francois One';
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.to-top-button:hover {
+    background-color: #F6F1F1;
+    color: #00235B;
+    border: 1px solid #00235B;
+    transition: 0.5s;
+}

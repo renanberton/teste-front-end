@@ -7,6 +7,9 @@ type userType = {
     id: number,
     email: string,
     name: string,
+    username: string,
+    phone: string,
+    website: string,
 }
 
 type idType = {
@@ -36,19 +39,53 @@ export function ModalBlog({ id }: idType) {
             <>
             {dataLoaded &&
             <div>
-                <h1>Post <br/> {post?.title.toLocaleUpperCase()}</h1>
                 <div className='container-coment'>
+                <h1>Post <br/> {post?.title.toLocaleUpperCase()}</h1>
                     {coments.map((coment, key) => {
                         key += 1;
                         return (
                             <div className='coment'  key={key}>
-                                <h1>Comment {key}</h1>
+                                <h2>Comment {key}</h2>
                                 <p>{coment.body}</p>
                                 <p><strong>Name: </strong>{coment.name}</p>
                                 <p><strong>Email: </strong>{coment.email}</p>
                             </div>
                         )
                     })}
+                </div>
+            </div>
+            }
+            </>
+        )
+}
+
+
+export function ModalUsers({ id }: idType) {
+    const [coments, setComents] = useState<userType>();
+    const [post, setPost] = useState<userType>();
+    const [dataLoaded, setDataLoaded] = useState<boolean>(false);
+    
+        useEffect(() => {
+            fetch("https://jsonplaceholder.typicode.com/users/" + id)
+                .then(response => response.json())
+                .then(data => {setComents(data); setDataLoaded(true)})
+        }, [])
+
+        return (
+            <>
+            {dataLoaded &&
+            <div>
+                <h1>Post <br/> {post?.title.toLocaleUpperCase()}</h1>
+                <div className='container-coment'>
+                    {
+                    <div className='coment'>
+                        <h1>{coments?.name} </h1>
+                        <span><strong>Name: </strong>{coments?.username}</span>
+                        <span><strong>Email: </strong>{coments?.email}</span>
+                        <span><strong>Phone: </strong>{coments?.phone}</span>
+                        <span><strong>Website: </strong>{coments?.website}</span>
+                    </div>
+                    }
                 </div>
             </div>
             }
