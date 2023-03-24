@@ -29,16 +29,19 @@
     text-align: center;
     max-width: 400px;
     width: 90%;
+    text-align: center;
 }
 
 .container-coment h1 {
     font-size: 26px;
     color: #00235B;
+    text-align: center;
 }
 
 .container-coment h2 {
     font-size: 20px;
     color: #00235B;
+    text-align: center;
 }
 
 
