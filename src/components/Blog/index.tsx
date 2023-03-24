@@ -43,16 +43,16 @@ export function Blog() {
       <div className='container'>
         <h1>Blog</h1>
         <ul className='container-post'>
-          {blogs.slice(0, itemsToShow).map((blog) => {
+          {blogs.slice(0, itemsToShow).map((blog, key) => {
             return (
-              <li className='post' onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
+              <li className='post' key={key} onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
                 <h2>{blog.title}</h2>
                 <p>{blog.body}</p>
               </li>
             );
           })}
         </ul>
-        {itemsToShow == blogs.length && <ScrollToTopButton />}
+        {itemsToShow === blogs.length && <ScrollToTopButton />}
         {itemsToShow < blogs.length && (
           <button className='load-more' onClick={() => setItemsToShow(itemsToShow + 25)}>Ver Mais</button>
         )}

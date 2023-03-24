@@ -35,9 +35,9 @@ export function Users() {
       <div className='container'>
         <h1>Users</h1>
         <ul className='container-post'>
-          {users.map((blog) => {
+          {users.map((blog, key) => {
             return (
-              <li className='post-users' onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
+              <li className='post-users' key={key} onClick={() => {setIdPost(blog.id); setOpenModal(true); setopenBlog(false) }}>
                 <h2>{blog.name}</h2>
                 <p>{blog.username} <br /> {blog.email}</p>
               </li>

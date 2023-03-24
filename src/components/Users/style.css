@@ -77,12 +77,6 @@
     transition: 0.5s;
 }
 
-.close-icon {
-    position: absolute;
-    top: 50px;
-    right:50px;
-    cursor: pointer;
-}
 
 .load-more {
     max-width: 250px;

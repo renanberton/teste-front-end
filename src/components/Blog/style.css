@@ -78,9 +78,9 @@
 }
 
 .close-icon {
-    position: absolute;
-    top: 50px;
-    right:50px;
+    position: fixed;
+    top: 25%;
+    right:20%;
     cursor: pointer;
 }
 
