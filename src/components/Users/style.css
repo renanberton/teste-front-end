@@ -60,6 +60,10 @@
     margin: 0 auto;
 }
 
+.coment span {
+    text-align: center;
+}
+
 .post-users h2 {
     width: 90%;
     max-width: 400px;
