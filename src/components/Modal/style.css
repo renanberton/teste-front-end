@@ -40,3 +40,19 @@
     font-size: 20px;
     color: #00235B;
 }
+
+
+@media (max-width: 420px) {
+
+.coment {
+    padding: 10px 0;
+}
+
+.coment h2 {
+    font-size: 18px;
+}
+
+.coment p {
+    font-size: 14px;
+}
+}
