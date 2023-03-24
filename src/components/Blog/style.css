@@ -12,6 +12,10 @@
     background-color: #F6F1F1;
 }
 
+.container h1 {
+    color: #00235B;
+}
+
 .container-post {
     width: 100%;
     display: flex;
