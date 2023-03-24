@@ -47,8 +47,8 @@ export function ModalBlog({ id }: idType) {
                             <div className='coment'  key={key}>
                                 <h2>Comment {key}</h2>
                                 <p>{coment.body}</p>
-                                <p><strong>Name: </strong>{coment.name}</p>
-                                <p><strong>Email: </strong>{coment.email}</p>
+                                <p><strong>Name: <br /></strong>{coment.name}</p>
+                                <p><strong>Email: <br /></strong>{coment.email}</p>
                             </div>
                         )
                     })}
