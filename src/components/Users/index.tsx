@@ -33,7 +33,6 @@ export function Users() {
       {dataLoaded && openModal && idPost && <ModalUsers id={idPost} />}
       {openBlog && 
       <div className='container'>
-        <h1>Blog - API</h1>
         <ul className='container-post'>
           {users.map((blog) => {
             return (

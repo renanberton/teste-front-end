@@ -41,7 +41,6 @@ export function Blog() {
       {dataLoaded && openModal && idPost && <ModalBlog id={idPost} />}
       {openBlog && 
       <div className='container'>
-        <h1>Blog - API</h1>
         <ul className='container-post'>
           {blogs.slice(0, itemsToShow).map((blog) => {
             return (

@@ -121,3 +121,13 @@
     border: 1px solid #00235B;
     transition: 0.5s;
 }
+
+@media (max-width: 420px) {
+.post h2 {
+    font-size: 18px;
+}
+
+.post p {
+    font-size: 14px;
+}
+}
