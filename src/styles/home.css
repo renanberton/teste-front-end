@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -14,4 +15,19 @@ h1 {
     font-family: "Francois One";
     color: #F6F1F1;
     font-size: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Francois One';
+    color: #3c3c3c;
+    font-size: 26px;
+}
+
+p {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #6c6c6c;
 }

@@ -8,6 +8,9 @@ export function Header() {
                 <h1>Blog - API</h1>
                 <ul>
                     <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
                         <Link to="/Blog">BLOG</Link>
                     </li>
                     <li>
