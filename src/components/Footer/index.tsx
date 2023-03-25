@@ -10,6 +10,7 @@ export function Footer() {
             <img className='social-icon' src="/imgs/twitter-icon.png" alt='Icone de redirecionamento para a página do Twitter.'/>
             <img className='social-icon' src="/imgs/whatsapp-icon.png" alt='Icone de redirecionamento para a página do Whatsapp.'/>
          </div>
+         <span>© All Rights Reserved</span>
       </footer>
     )
 }
