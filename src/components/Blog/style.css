@@ -127,11 +127,16 @@
 }
 
 @media (max-width: 420px) {
-.post h2 {
-    font-size: 18px;
-}
+    .post {
+        height: 100%;
+        padding: 10px 0;
+    }
 
-.post p {
-    font-size: 14px;
-}
+    .post h2 {
+        font-size: 18px;
+    }
+
+    .post p {
+        font-size: 14px;
+    }
 }

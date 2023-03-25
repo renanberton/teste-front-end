@@ -6,7 +6,7 @@ footer {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 50px;
+   gap: 40px;
 }
 
 footer h3 {
@@ -38,4 +38,10 @@ footer .social-icons {
 footer .social-icon {
    width: 30px;
    cursor: pointer;
+}
+
+footer span {
+   font-family: 'Roboto';
+   font-size: 12px;
+   color: #b3b0b0;
 }
