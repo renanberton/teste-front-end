@@ -5,13 +5,13 @@ export function Header() {
     return (
         <div>
             <header>
-                <h1>Blog - API</h1>
+                <h1>Blog</h1>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/Blog">BLOG</Link>
+                        <Link to="/Posts">Posts</Link>
                     </li>
                     <li>
                         <Link to="/Users">Users</Link>

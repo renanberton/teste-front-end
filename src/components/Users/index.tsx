@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { ModalUsers } from '../Modal';
 import { Header } from '../Header';
+import { ModalUsers } from '../Modal';
+import { Footer } from '../Footer';
 import './style.css';
 
 type userType = {
@@ -46,6 +47,7 @@ export function Users() {
         </ul>
       </div>
       }
+    <Footer />  
     </>
   );
 }
