@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../Header';
-import { ModalBlog } from '../Modal';
+import { ModalPost } from '../Modal';
 import { Footer } from '../Footer';
 import './style.css';
 
@@ -42,7 +42,7 @@ export function Blog() {
     <>
     <Header />
       {openModal && <img className='close-icon' src="/imgs/close-icon.png" alt='Imagem para fechar os comentários' width={"50px"} onClick={() => {setOpenModal(false); setOpenPost(true)}} />}
-      {dataLoaded && openModal && idPost && <ModalBlog id={idPost} />}
+      {dataLoaded && openModal && idPost && <ModalPost id={idPost} />}
       {openPost && 
       <div className='container'>
         <h1>Posts</h1>

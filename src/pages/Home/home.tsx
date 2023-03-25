@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import './home.css';
+import './style.css';
 
 export function Home() {
     return (

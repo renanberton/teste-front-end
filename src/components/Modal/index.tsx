@@ -17,7 +17,7 @@ type idType = {
 }
 
 
-export function ModalBlog({ id }: idType) {
+export function ModalPost({ id }: idType) {
     const [coments, setComents] = useState<userType[]>([]);
     const [post, setPost] = useState<userType>();
     const [dataLoaded, setDataLoaded] = useState<boolean>(false);
@@ -33,7 +33,6 @@ export function ModalBlog({ id }: idType) {
                 .then(response => response.json())
                 .then(data => setComents(data))
         }, [])
-
 
         return (
             <>
@@ -58,7 +57,6 @@ export function ModalBlog({ id }: idType) {
             </>
         )
 }
-
 
 export function ModalUsers({ id }: idType) {
     const [coments, setComents] = useState<userType>();
