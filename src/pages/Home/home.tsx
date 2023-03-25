@@ -1,4 +1,5 @@
 import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
 import '../../styles/home.css';
 
 export function Home() {
@@ -10,7 +11,7 @@ export function Home() {
                 <p>Use the menu to navigate the site and enjoy all its features.</p>
                 <img className='blog-image' src="/imgs/blog-image.jpg" alt='Imagem para fechar os comentários' width={"400px"}  />
             </div>
+            <Footer />
         </div>
-
     )
 }

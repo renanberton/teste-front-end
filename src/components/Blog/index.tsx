@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../Header';
 import { ModalBlog } from '../Modal';
+import { Footer } from '../Footer';
 import './style.css';
 
 type userType = {
@@ -58,6 +59,7 @@ export function Blog() {
         )}
       </div>
       }
+    <Footer />
     </>
   );
 }
