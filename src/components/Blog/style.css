@@ -85,9 +85,9 @@
 }
 
 .load-more {
-    max-width: 250px;
+    max-width: 200px;
     width: 70%;
-    height: 50px;
+    height: 40px;
     background-color: #EA5455;
     color: #fff;
     font-family: 'Francois One';
@@ -106,9 +106,9 @@
 }
 
 .to-top-button {
-    max-width: 250px;
+    max-width: 200px;
     width: 70%;
-    height: 50px;
+    height: 40px;
     background-color: #FFDD83;
     color: #3c3c3c;
     font-family: 'Francois One';
