@@ -27,3 +27,8 @@ Yarn: yarn install
 5 - Ao final da instalação, inicie o servidor de desenvolvimento executando o comando:  
 npm start ou yarn start  
 6 - O servidor de desenvolvimento será iniciado e o projeto React será aberto em seu navegador padrão, no endereço http://localhost:3000.
+
+# Conheça o Projeto
+
+- Para conhecer o projeto, basta acessar o link:  
+https://blog-front-end.netlify.app
