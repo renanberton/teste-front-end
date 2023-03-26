@@ -4,13 +4,13 @@ Projeto de interfaces de um blog, seus posts e usuários.
 
 # Pré-Requisitos para Instalação do Projeto
 
-- Possuir o Node.js instalado. 
+- Possuir o Node.js instalado.  
 Link para download: https://nodejs.org/pt-br/download/package-manager
-- Possuir NPM ou Yarn instalados.
+- Possuir NPM ou Yarn instalados.  
 Link para Download NPM: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm   
 Link para Download Yarn: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
-- Posusir o GIT instalado.
+- Posusir o GIT instalado.  
   Link para Download: https://git-scm.com/downloads
 
 
