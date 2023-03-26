@@ -10,7 +10,7 @@ Link para download: https://nodejs.org/pt-br/download/package-manager
 Link para Download NPM: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm   
 Link para Download Yarn: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
-- Posusir o GIT instalado.  
+- Possuir o GIT instalado.  
   Link para Download: https://git-scm.com/downloads
 
 
