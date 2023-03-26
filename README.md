@@ -10,19 +10,18 @@ Link para download: https://nodejs.org/pt-br/download/package-manager
 Link para Download NPM: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm   
 Link para Download Yarn: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
-
-  - Posusir o GIT instalado.
+- Posusir o GIT instalado.
   Link para Download: https://git-scm.com/downloads
 
 
-  # Instalação do Projeto
+# Instalação do Projeto
 
-  1 - Abra o terminal e navegue até o diretório onde deseja armazenar o projeto.    
-  2 - Clone o repositório usando o comando:   
-  git clone https://github.com/renanberton/teste-front-end  
-  3 - Navegue até o diretório do projeto recém-clonado:  
-  cd teste-front-end  
-  4 - Instale as dependências do projeto usando o gerenciador de pacotes NPM ou Yarn:  
+1 - Abra o terminal e navegue até o diretório onde deseja armazenar o projeto.    
+2 - Clone o repositório usando o comando:   
+git clone https://github.com/renanberton/teste-front-end  
+3 - Navegue até o diretório do projeto recém-clonado:  
+cd teste-front-end  
+4 - Instale as dependências do projeto usando o gerenciador de pacotes NPM ou Yarn:  
 NPM: npm install  ou  
 Yarn: yarn install  
 5 - Ao final da instalação, inicie o servidor de desenvolvimento executando o comando:  
